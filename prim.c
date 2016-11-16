@@ -57,7 +57,5 @@ static struct PyModuleDef cmodule = {
 
 PyInit_c(void)
 {
-    PyObject *m;
-	m = PyModule_Create(&cmodule);
-	return m;
+	return PyModule_Create(&cmodule);
 }
